@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"><script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <title>card gallary</title>
+</head>
+<style>
+h1{
+    font-size: 50px;
+    font-weight: 500px;
+    text-align: center;
+}    
+div
+{
+display:grid;
+grid-template-areas:
+"header1 header2 header3 header4"
+"nav1 nav2 nav3 nav4"
+"article1 article2 article3 article4 "
+"footer1 footer2 footer3 footer4";
+grid-template-rows:1fr 1fr 1fr 1fr;
+grid-template-columns:1fr 1fr 1fr 1fr;		
+grid-gap:20px;
+margin:0px;
+height:300px;
+width:360px;
+background-color:pink;
+}
+header,nav,article,footer
+{
+padding:10px;
+object-fit: cover;
+border:2px solid black;
+align-items:center;
+}
+div>img
+{
+width:340px;
+height:280px;
+margin:5px;
+padding:5px;
+}
+</style>
+<body>
+<h1>CAR IMAGE GALLERY</h1>    
+<div class="main">    
+<div class="header1">
+<img src="https://cdni.autocarindia.com/utils/imageresizer.ashx?n=https://cms.haymarketindia.net/model/uploads/modelimages/Mercedes-Benz-A-class-Hatchback-210920221745.jpg&w=350&h=251&q=90&c=1">
+</div>
+<div class="header2">
+<img src="https://imgd.aeplcdn.com/370x208/n/cw/ec/106257/venue-exterior-right-front-three-quarter-2.jpeg?isig=0&q=75">
+</div>
+<div class="header3">
+<img src="https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/2019-honda-civic-sedan-1558453497.jpg?crop=1xw:0.9997727789138833xh;center,top&resize=480:*"></div>
+<div class="header4">
+<img src="https://cdni.autocarindia.com/utils/imageresizer.ashx?n=https://cms.haymarketindia.net/model/uploads/modelimages/Mahindra-Scorpio-N-300620221053.jpg&w=872&h=578&q=75&c=1">
+</div>
+<div class="nav1">
+<img src="https://th.bing.com/th?id=OIP.ZsPLFCxDQewrzKRkU-XuJwHaFj&w=288&h=216&c=8&rs=1&qlt=90&o=6&dpr=1.3&pid=3.1&rm=2">
+</div>
+<div class="nav2">
+<img src="https://th.bing.com/th/id/OIP.rev2RnUlQ2lf49-T5zZCYQHaEo?w=292&h=182&c=7&r=0&o=5&dpr=1.3&pid=1.7">
+</div>
+<div class="nav3">
+<img src="https://th.bing.com/th/id/OIP.gA0-KcJqJ-DilKHX5N0UqwHaEW?w=315&h=184&c=7&r=0&o=5&dpr=1.3&pid=1.7">
+</div>
+<div class="nav4">
+<img src="https://th.bing.com/th/id/OIP.0f62e8e2a9d1t98UBWZzpwHaE8?pid=ImgDet&w=800&h=534&rs=1">
+</div>
+<div class="nav5">
+<img src="" alt="image">
+</div>
+<div class="nav6">
+<img src="https://th.bing.com/th/id/OIP.0f62e8e2a9d1t98UBWZzpwHaE8?pid=ImgDet&w=800&h=534&rs=1">
+</div>
+<div class="nav7">
+<img src="https://th.bing.com/th?id=OIP.ZsPLFCxDQewrzKRkU-XuJwHaFj&w=288&h=216&c=8&rs=1&qlt=90&o=6&dpr=1.3&pid=3.1&rm=2">
+</div>
+<div class="nav8">
+<img src="https://th.bing.com/th/id/OIP.4KDlqtsNbccH9z5OFe3ZPQHaE4?w=242&h=180&c=7&r=0&o=5&dpr=1.3&pid=1.7">
+</div>
+
+<div class="article1">
+<img src="https://cdni.autocarindia.com/utils/imageresizer.ashx?n=https://cms.haymarketindia.net/model/uploads/modelimages/Mercedes-Benz-A-class-Hatchback-210920221745.jpg&w=350&h=251&q=90&c=1">
+</div>
+<div class="article2">
+<img src="https://cdni.autocarindia.com/utils/imageresizer.ashx?n=https://cms.haymarketindia.net/model/uploads/modelimages/Mahindra-Scorpio-N-300620221053.jpg&w=872&h=578&q=75&c=1">
+</div>
+<div class="article3">
+<img src="https://imgd.aeplcdn.com/370x208/n/cw/ec/106257/venue-exterior-right-front-three-quarter-2.jpeg?isig=0&q=75">
+</div>
+<div class="article4">
+<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSmOrEwz-gwkSpflV-NOitimSftVWbt-aRms8uskvFz_9VljnFHmhmDGraIJi9uOoLcyXA&usqp=CAU">
+</div>
+<div class="article5">
+<img src="https://static.motor.es/fotos-noticias/2019/01/min652x435/lamborghini-huracan-evo-configurador-201953419_8.jpg">
+</div>
+<div class="article6">
+<img src="https://th.bing.com/th/id/OIP.cAmReXmDqBytcM2FYH1BMQHaFL?pid=ImgDet&rs=1">
+</div>
+<div class="article7">
+<img src="https://www.ccarprice.com/products/Lamborghini-Huracan-Evo-AWD-2021.jpg">
+</div>
+<div class="article8">
+<img src="https://th.bing.com/th/id/OIP.4KDlqtsNbccH9z5OFe3ZPQHaE4?w=242&h=180&c=7&r=0&o=5&dpr=1.3&pid=1.7">
+</div>
+<div class="article9">
+<img src="https://th.bing.com/th/id/OIP.HUIbZtmTTxxYquP6pKcq5AHaEa?w=279&h=180&c=7&r=0&o=5&dpr=1.3&pid=1.7">
+</div>
+<div class="article10">
+<img src="https://th.bing.com/th/id/OIP.xdPkRzinAWUJhYj65jnwyAHaEl?w=274&h=180&c=7&r=0&o=5&dpr=1.3&pid=1.7">
+</div>
+<div class="article11">
+<img src="https://images.hgmsites.net/lrg/2010-honda-accord-coupe-2-door-i4-auto-ex-angular-front-exterior-view_100234760_l.jpg"></div>
+<div class="article12">
+<img src="https://di-uploads-pod5.dealerinspire.com/mccluskeyautomotive/uploads/2017/09/honda_accord-blue.jpeg">
+</div>
+<div class="footer1">
+<img src="https://imgd.aeplcdn.com/0x0/n/cw/ec/101055/virtus-exterior-right-front-three-quarter.jpeg?isig=0">
+</div>
+<div class="footer2">
+<img src="https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/2019-honda-civic-sedan-1558453497.jpg?crop=1xw:0.9997727789138833xh;center,top&resize=480:*">
+</div>
+<div class="footer3">
+<img src="https://imgd.aeplcdn.com/370x208/n/cw/ec/106257/venue-exterior-right-front-three-quarter-2.jpeg?isig=0&q=75">
+</div>
+<div class="footer4">
+<img src="https://cdni.autocarindia.com/utils/imageresizer.ashx?n=https://cms.haymarketindia.net/model/uploads/modelimages/Mercedes-Benz-A-class-Hatchback-210920221745.jpg&w=350&h=251&q=90&c=1">
+</div>
+</div>
+</body>
+</html>

@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <title>BS jwellery</title>   
+    <style>
+        body
+        {
+          
+        font-family: sans-serif;
+       
+        }
+        .head{
+            background-image: url("https://images.news18.com/ibnlive/uploads/2022/11/shutterstock_1487439638-16685023913x2.jpg");
+            background-size: cover;
+            background-repeat: no-repeat;
+            height: 100vh;       
+        }
+       
+        .head .nav {
+            list-style-type: none;
+            display: inline-flex;
+            
+        }
+        .head .nav li a{
+            text-decoration: none;
+            margin:15px 50px;
+            padding:10px;
+            color:rgb(218, 25, 25);
+            border-radius: 15px;            
+        }
+        .head .pic img{
+            width: 100%;
+            height: 100vh;
+        }
+        .sub {
+            display: none;
+            list-style-type: none;
+        
+        }
+       .nav li:hover .sub{
+            display: block;
+            position: absolute;
+            background-color: rgb(41, 102, 133);
+            margin:0px  40px;
+          
+        }
+        .nav li:hover .sub li a{
+            display: block;
+            position: relative;
+            width: 50px;
+            margin-left: -20px;
+            
+        }
+        .nav li:hover .sub li a:hover{
+            color: aliceblue;
+        }
+        .box1 .col-sm-3 img{
+            width: 280px;
+            height: 280px;
+            padding:10px 0px;
+            margin: 10px 0px;
+        }
+        .btn{
+            background:linear-gradient( 40deg,rgb(238, 7, 45),rgb(14, 14, 14));
+        }
+
+        .btn a{
+            list-style-type:none;
+            text-decoration: none;
+            color: aliceblue;
+        }
+        .btn a:hover{
+            font-size: 10px;
+            margin: 10px;
+        }
+        
+        .snap{
+            background-color: #1c0813;
+            margin: 10px 0px;
+            height: 280px;
+            justify-content: space-between;
+        }
+        .snap img{
+            height: 250px;
+            width: 250px;
+            margin: 12px;
+        }
+        .snap img:hover{
+            box-shadow: -5px 5px 5px rgb(141, 194, 216);
+        }
+
+       
+
+        .foot{
+            background-color: rgb(100, 92, 92);
+            color: rgb(195, 203, 209);
+            margin: 10px 0;
+        }
+        .foot .list li{
+            list-style-type:none;
+        }
+        .foot .list li a{
+            text-decoration: none;
+        }
+        .foot .txt{
+            align-items: center;
+            justify-content: center;
+            margin-left:500px;
+            padding: 30px;
+        }
+    </style>
+    
+</head>
+<body>
+    <div class="container"> 
+    <div class="head img-responsive">
+       <ul class="nav">
+            <li><a href="#"><i class="fa fa-home"></i>HOME</a>
+                
+            </li>
+            <li><a href="#"><i class="fa fa-inr"></i> PRICE</a></li>
+            
+            <li><a href="#"><i class="fa fa-gift"></i>SCHEME</a>
+                <ul class="sub">
+                    <li><a href="default.asp">DAILY</a></li>
+                    <li><a href="default.asp">WEEKLY</a></li>
+                    <li><a href="default.asp">MONTHLY</a></li>
+                    <li><a href="default.asp">YEARLY</a></li>
+                </ul>
+            </li>
+            
+            <li><a href="#"><i class="fa fa-user"></i>PRODUCT</a>
+                <ul class="sub">
+                    <li><a href="default.asp">GOLD</a></li>
+                    <li><a href="default.asp">DIAMOND</a></li>
+                    <li><a href="default.asp">PLATINUM</a></li>
+                    <li><a href="default.asp">SILVER</a></li>
+                </ul>
+            </li>
+            <li><a href="#"><i class="fa fa-sign-in"></i>LOGIN</a></li>
+        </ul>
+    </div> 
+    </div>
+
+
+
+    <div class="container">
+        <div class="snap">
+           <a href="https://www.tanishq.co.in/shop/diamond?sort=10"><img src="https://staticimg.titan.co.in/Tanishq/Catalog/503120DCPADA09_1.jpg?impolicy=pqmed&imwidth=640" alt="" class="img-circle"></a>
+           <a href="https://www.candere.com/jewellery/gold-necklaces.html"><img src="https://suqbahrain.com/public/uploads/products/photos/7MJwRm8DUuEOJvFPYdUFJF81K8DjpvZ3Ot7iRucp.jpeg" alt="" class="img-circle" ></a>
+           <a href="https://www.jewelove.in/collections/platinum-wedding-bands"><img src="https://cdn.shopify.com/s/files/1/0061/8378/0442/products/R021_1_e2a3e921-aa03-4dab-b7c3-6d038d86b2e0_1024x1024.jpg?v=1675944178"class="img-circle" alt=""></a>
+           <a href="https://www.caratlane.com/fashion-jewellery-necklaces/?filters=silver|chokers|layered+necklaces"><img src="https://th.bing.com/th/id/OIP.k_Iu0jd6DWvspQuOKmxAbwHaHa?w=211&h=211&c=7&r=0&o=5&dpr=1.3&pid=1.7" alt=""class="img-circle" ></a>
+        </div>
+    </div>
+   <div class="container">
+   <div class="box1">  
+        <div class="col-sm-3">
+            <img src="https://th.bing.com/th/id/R.040ce70e0c0606a9cf7c6d00d225a074?rik=reNDp7n6e4BrCw&riu=http%3a%2f%2f3.bp.blogspot.com%2f-eRBuTQhxyIE%2fUtP-QjVZ3BI%2fAAAAAAAAAF8%2fTWA03dFE6Ag%2fs1600%2fantique%2bnecklace.PNG&ehk=tFOZx%2b57UQ6A0VWHlvvitC%2fSN93ayNfr8AJlgho3id8%3d&risl=&pid=ImgRaw&r=0" alt="image link" >
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i><br>
+            <div class="btn "><a href="https://www.khazanajewellery.com/products/?cat=Gold"> EXPLORE MORE</a></div>
+         </div> 
+         <div class="col-sm-3">
+            <img src="https://n1.sdlcdn.com/imgs/d/0/q/Latest-Golden-Copper-Necklace-Set-SDL202892902-1-470cf.JPG" alt="image link">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star-o"></i><br>
+            <div class="btn "><a href="https://www.khazanajewellery.com/products/?cat=Gold"> EXPLORE MORE</a></div>
+         </div> 
+         <div class="col-sm-3">
+            <img src="https://i.pinimg.com/originals/db/e1/48/dbe148011c1cc4d7e6e1c9e17e0b02ef.jpg" alt="image link">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i><br>
+            <div class="btn "><a href="https://www.khazanajewellery.com/products/?cat=Gold"> EXPLORE MORE</a></div>
+         </div> 
+         <div class="col-sm-3">
+            <img src="https://n2.sdlcdn.com/imgs/d/k/l/Swarajshop-Golden-Necklace-Set-with-SDL448835550-1-3565d.JPG" alt="image link">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star-o"></i><br>
+            <div class="btn"><a href="https://www.khazanajewellery.com/products/?cat=Gold"> EXPLORE MORE</a></div>
+         </div> 
+         <div class="col-sm-3">
+            <img src="https://th.bing.com/th/id/OIP.mJOs6aQziMP3v6v-vfbnhAHaHP?w=214&h=210&c=7&r=0&o=5&dpr=1.3&pid=1.7" alt="image link">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i><br>
+            <div class="btn "><a href="https://www.khazanajewellery.com/products/?cat=Gold"> EXPLORE MORE</a></div>
+         </div> 
+         <div class="col-sm-3">
+            <img src="https://th.bing.com/th/id/OIP.4G5P9lhbajnQYBtPT3aYXAHaHa?pid=ImgDet&w=167&h=167&c=7&dpr=1.3" alt="image link">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star-o"></i><br>
+            <div class="btn"><a href="https://www.khazanajewellery.com/products/?cat=Gold"> EXPLORE MORE</a></div>
+         </div> 
+         <div class="col-sm-3">
+            <img src="https://th.bing.com/th/id/OIP.U6_d6xHhyNefCR2Y2GyI9QHaHa?pid=ImgDet&w=167&h=167&c=7&dpr=1.3" alt="image link">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i><br>
+            <div class="btn "><a href="https://www.khazanajewellery.com/products/?cat=Gold"> EXPLORE MORE</a></div>
+         </div> 
+         <div class="col-sm-3">
+            <img src="https://th.bing.com/th/id/OIP.SPrYUX4l_XaNGZ8Qua_hfwHaJQ?pid=ImgDet&w=167&h=208&c=7&dpr=1.3" alt="image link">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star-o"></i><br>
+            <div class="btn "><a href="https://www.khazanajewellery.com/products/?cat=Gold"> EXPLORE MORE</a></div>
+         </div> 
+         <div class="col-sm-3">
+            <img src="https://th.bing.com/th/id/OIP.L-HES2XstumwFJZGpRAV4gHaHY?w=163&h=180&c=7&r=0&o=5&dpr=1.3&pid=1.7" alt="image link">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i><br>
+            <div class="btn "><a href="https://www.khazanajewellery.com/products/?cat=Gold"> EXPLORE MORE</a></div>
+         </div> 
+         <div class="col-sm-3">
+            <img src="https://th.bing.com/th/id/OIP.IuBbTjV6X8QKyS9zGJVqHQHaHX?w=205&h=204&c=7&r=0&o=5&dpr=1.3&pid=1.7" alt="image link">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star-o"></i><br>
+            <div class="btn "><a href="https://www.khazanajewellery.com/products/?cat=Gold"> EXPLORE MORE</a></div>
+         </div> 
+         <div class="col-sm-3">
+            <img src="https://th.bing.com/th/id/OIP.gWp8Bv64kYOPm_AeYYY6XwHaHa?w=216&h=216&c=7&r=0&o=5&dpr=1.3&pid=1.7" alt="image link">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i><br>
+            <div class="btn "><a href="https://www.khazanajewellery.com/products/?cat=Gold"> EXPLORE MORE</a></div>
+         </div> 
+         <div class="col-sm-3">
+            <img src="https://th.bing.com/th/id/OIP.N_YmozWhxhAhK5-gLswpcwHaHa?w=210&h=209&c=7&r=0&o=5&dpr=1.3&pid=1.7" alt="image link">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star-o"></i><br>
+            <div class="btn"><a href="https://www.khazanajewellery.com/products/?cat=Gold"> EXPLORE MORE</a></div>
+         </div>
+         <div class="col-sm-3">
+            <img src="https://th.bing.com/th/id/OIP.1lt6vYUSiNhIK0Hi04ulngHaHa?pid=ImgDet&w=207&h=207&c=7&dpr=1.3" alt="image link">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i><br>
+            <div class="btn "><a href="https://www.khazanajewellery.com/products/?cat=Gold"> EXPLORE MORE</a></div>
+         </div> 
+         <div class="col-sm-3">
+            <img src="https://th.bing.com/th/id/OIP.pmc93lcO5NwM6Zctk8wDegHaHa?pid=ImgDet&w=800&h=800&rs=1" alt="image link">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star-o"></i><br>
+            <div class="btn"><a href="https://www.khazanajewellery.com/products/?cat=Gold"> EXPLORE MORE</a></div>
+         </div> 
+         <div class="col-sm-3">
+            <img src="https://th.bing.com/th/id/OIP.jOwcG5eRVWyVOMhEmvLBrQHaHa?pid=ImgDet&rs=1" alt="image link">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i><br>
+            <div class="btn "><a href="https://www.khazanajewellery.com/products/?cat=Gold"> EXPLORE MORE</a></div>
+         </div> 
+         <div class="col-sm-3">
+            <img src="https://th.bing.com/th/id/OIP.b5j6ODsRXWGvK6bcaAIaFgHaHa?pid=ImgDet&w=167&h=167&c=7&dpr=1.3" alt="image link">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star-o"></i><br>
+            <div class="btn"><a href="https://www.khazanajewellery.com/products/?cat=Gold"> EXPLORE MORE</a></div>
+         </div> 
+         <div class="col-sm-3">
+            <img src="https://www.dhanalakshmijewellers.com/wp-content/uploads/2020/03/goldbanglescover.jpg" alt="image link">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i><br>
+            <div class="btn "><a href="https://www.khazanajewellery.com/products/?cat=Gold"> EXPLORE MORE</a></div>
+         </div> 
+         <div class="col-sm-3">
+            <img src="https://th.bing.com/th/id/OIP.nd5TjUi3suAf3X-B_ZMjCAAAAA?pid=ImgDet&w=167&h=167&c=7&dpr=1.3" alt="image link">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star-o"></i><br>
+            <div class="btn"><a href="https://www.khazanajewellery.com/products/?cat=Gold"> EXPLORE MORE</a></div>
+         </div> 
+         <div class="col-sm-3">
+            <img src="https://th.bing.com/th/id/OIP.0b9NiXZVneHRez-ewWc0LAAAAA?pid=ImgDet&w=207&h=166&c=7&dpr=1.3" alt="image link">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i><br>
+            <div class="btn"><a href="https://www.khazanajewellery.com/products/?cat=Gold"> EXPLORE MORE</a></div>
+         </div> 
+         <div class="col-sm-3">
+            <img src="https://www.khazanajewellery.com/wp-content/uploads/2016/06/Khazana-day18235-585X575.jpg" alt="image link">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star-o"></i><br>
+            <div class="btn"><a href="https://www.khazanajewellery.com/products/?cat=Gold"> EXPLORE MORE</a></div>
+         </div>  
+         <div class="col-sm-3">
+            <img src="https://www.khazanajewellery.com/wp-content/uploads/2016/06/Khazana-day-28396-585X5753.jpg" alt="image link">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star-o"></i><br>
+            <div class="btn"><a href="https://www.khazanajewellery.com/products/?cat=Gold"> EXPLORE MORE</a></div>
+         </div>  
+         <div class="col-sm-3">
+            <img src="https://www.khazanajewellery.com/wp-content/uploads/2016/06/Khazana-day-28320-585X575.jpg" alt="image link">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star-o"></i><br>
+            <div class="btn"><a href="https://www.khazanajewellery.com/products/?cat=Gold"> EXPLORE MORE</a></div>
+         </div>  
+         <div class="col-sm-3">
+            <img src="https://www.khazanajewellery.com/wp-content/uploads/2016/06/KHAZANA-DAY-1210828-585x575.jpg" alt="image link">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star-o"></i><br>
+            <div class="btn"><a href="https://www.khazanajewellery.com/products/?cat=Gold"> EXPLORE MORE</a></div>
+         </div>  
+         <div class="col-sm-3">
+            <img src="https://www.khazanajewellery.com/wp-content/uploads/2016/06/Khazana-day-28509-585x575.jpg" alt="image link">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star-o"></i><br>
+            <div class="btn"><a href="https://www.khazanajewellery.com/products/?cat=Gold"> EXPLORE MORE</a></div>
+         </div>
+         <div class="col-sm-3">
+            <img src="https://staticimg.titan.co.in/Tanishq/Banners/rivaah-23/images/classic-reinvented/classic-3.jpg" alt="image link">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star-o"></i><br>
+            <div class="btn"><a href="https://www.khazanajewellery.com/products/?cat=Gold"> EXPLORE MORE</a></div>
+         </div>  
+         <div class="col-sm-3">
+            <img src="https://staticimg.titan.co.in/Tanishq/Banners/rivaah-23/images/diamond/product.jpg" alt="image link">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star-o"></i><br>
+            <div class="btn"><a href="https://www.khazanajewellery.com/products/?cat=Gold"> EXPLORE MORE</a></div>
+         </div>  
+         <div class="col-sm-3">
+            <img src="https://www.trendbux.com/wp-content/uploads/2018/11/Bridal-Jewellery-Set.jpg" alt="image link">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star-o"></i><br>
+            <div class="btn"><a href="https://staticimg.titan.co.in/Tanishq/Banners/rivaah-23/images/sangeet/sangeet-product.png"> EXPLORE MORE</a></div>
+         </div> 
+         <div class="col-sm-3">
+            <img src="https://staticimg.titan.co.in/Tanishq/Banners/rivaah-23/images/classic-reinvented/classic-2.jpg" alt="image link">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star-o"></i><br>
+            <div class="btn"><a href="https://www.khazanajewellery.com/products/?cat=Gold"> EXPLORE MORE</a></div>
+         </div>     
+    </div>
+ </div>
+  
+
+ 
+    
+    <div class="foot">
+        <div class="container">
+            <div class="col-sm-4">
+                <h3>OUR SECURITY</h3>
+                <ul class="list">
+                    <li><a href="#">SERVICES</a></li>
+                    <li><a href="#">PRIVACY POLICY</a></li>
+                    <li><a href="#">TERMS AND CONDITIONS</a></li>
+                 </ul>
+            </div>
+            <div class="col-sm-4">
+                <H3>HELP ME</H3>
+                <ul class="list">
+                    <li><a href="#">FAQ</a></li>
+                    <li><a href="#">SHIPPING</a></li>
+                    <li><a href="#">RETURNS</a></li>
+                    <li><a href="#">ORDER</a></li>
+                    <li><a href="#">STATUS</a></li>
+                 </ul>
+            </div>
+            <div class="col-sm-4">
+                    <h3>FOLLOW US ON</h3>
+                     <ul class="list">
+                        <li><a href=""><i class="fa fa-google"></i></a></li>
+                        <li><a href=""><i class="fa fa-facebook"></i></a></li>
+                        <li><a href=""><i class="fa fa-instagram"></i></a></li>
+                        <li><a href=""><i class="fa fa-twitter"></i></a></li>
+                        <li><a href=""><i class="fa fa-linkedin"></i></a></li>
+                     </ul>
+            </div>
+        </div>
+        <div class="txt">
+            Created by Latha Full-stack web developer | All Rights Reserved.
+        </div>
+
+     </div>   
+           
+        
+     
+               
+              
+</body>
+</html>
+

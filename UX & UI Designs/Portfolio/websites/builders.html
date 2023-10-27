@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>buildingwebpage</title>
+</head>
+<style>
+body
+{
+display:grid;
+grid-template-areas:
+"header header header header"
+"nav nav nav nav"
+"art1 art2 art3 art4 "
+"footer footer footer footer";
+grid-template-rows:70px 70PX 1fr 15%;
+grid-template-columns:1FR 1FR 1FR 1FR;
+grid-gap:10px;
+height:100vh;
+margin:0px;
+border:5px solid black;
+box-sizing: border-box;
+}
+header,nav,div,footer
+{
+padding:5px;
+background-color:springgreen;
+}
+#header
+{
+grid-area:header;
+padding:5px;
+text-align:center;
+}
+#nav
+{
+grid-area:nav;
+}
+#nav ul{	
+list-style-type:none;
+}
+#nav ul li{
+display:inline-block;
+margin-right:115px; 
+}
+#nav ul li a{
+text-decoration:none;
+}
+#article
+{
+grid-area:article;
+}
+h2{
+    margin: 20px;
+    font-size: 30px;
+    font-weight: 900;
+}
+#art1 img {
+    margin: 15px;    
+    height: 250px;
+    width: 290px;
+}
+#art1 ol li{
+text-decoration:numbers;
+}
+#art2 img {
+    margin: 15px;    
+    height: 250px;
+    width: 290px;
+}
+#art2 ol li{
+text-decoration:numbers;
+}
+#art3 img {
+    margin: 15px;    
+    height: 250px;
+    width: 290px;
+}
+#art3 ol li{
+text-decoration:numbers;
+}
+#art4 img {
+    margin: 15px;    
+    height: 250px;
+    width: 290px;
+}
+#art4 ol li{
+text-decoration:numbers;
+}
+
+
+#footer
+{
+grid-area:footer;
+background-color:#000000cf;
+}
+#footer ul li{ 
+float:right;
+margin-right:250px;	
+margin-top:20px;
+}
+#footer ul li a
+{
+text-decoration:none;
+}
+
+</style>
+<body>
+<header id="header">
+<h1>LAMA FOUNDATION PVT.LID.</h1>
+</header>
+<nav id="nav">
+<UL>
+<LI><A HREF="DEFAULT.ASP">HOME</A></LI>
+<LI><A HREF="DEFAULT.ASP">CONTACT</A></LI>
+<LI><A HREF="DEFAULT.ASP">ABOUT</A></LI>
+<LI><A HREF="DEFAULT.ASP">PROFILE</A></LI>
+<LI><A HREF="default.asp">LOGIN</A></LI>
+<LI><A HREF="default.asp">SERVICE</A></LI>
+<LI><A HREF="default.asp">REGISTER</A></LI>
+</UL>
+</nav>
+<div id="art1">
+<img src="https://img.staticmb.com/mbcontent/images/uploads/2021/7/flat-and-apartment_1626887258175.jpg">
+<H2>FLATES FOR SALE</H2>
+<OL><h4>
+<LI>1BHK/2BHK/3BHK LUXURIOUS FLATS</LI>
+<LI>FULL TIME WATER SERVICE</LI>
+<LI>SCHOOLS AND COLLEGES IN 5KMS</LI>
+<LI>HOSPITALS FECILITIES IN 3KMS</LI>
+<LI>NEARBY TRANSPORTATIONS AVAILABLE</LI>
+</h4></OL>
+</div>
+
+<div id="art2">
+<img src="https://img.staticmb.com/mbcontent/images/uploads/2021/7/flat-and-apartment_1626887258175.jpg">
+<H2>FLATES FOR SALE</H2>
+<OL><h4>
+<LI>1BHK/2BHK/3BHK LUXURIOUS FLATS</LI>
+<LI>FULL TIME WATER SERVICE</LI>
+<LI>SCHOOLS AND COLLEGES IN 5KMS</LI>
+<LI>HOSPITALS FECILITIES IN 3KMS</LI>
+<LI>NEARBY TRANSPORTATIONS AVAILABLE</LI>
+</h4></OL>
+</div>
+
+<div id="art3">
+<img src="https://img.staticmb.com/mbcontent/images/uploads/2021/7/flat-and-apartment_1626887258175.jpg">
+<H2>FLATES FOR SALE</H2>
+<OL><h4>
+<LI>1BHK/2BHK/3BHK LUXURIOUS FLATS</LI>
+<LI>FULL TIME WATER SERVICE</LI>
+<LI>SCHOOLS AND COLLEGES IN 5KMS</LI>
+<LI>HOSPITALS FECILITIES IN 3KMS</LI>
+<LI>NEARBY TRANSPORTATIONS AVAILABLE</LI>
+</h4></OL>
+</div>
+
+<div id="art4">
+<img src="https://img.staticmb.com/mbcontent/images/uploads/2021/7/flat-and-apartment_1626887258175.jpg">
+<H2>FLATES FOR SALE</H2>
+<OL><h4>
+<LI>1BHK/2BHK/3BHK LUXURIOUS FLATS</LI>
+<LI>FULL TIME WATER SERVICE</LI>
+<LI>SCHOOLS AND COLLEGES IN 5KMS</LI>
+<LI>HOSPITLS FECILITIES IN 3KMS</LI>
+<LI>NEARBY TRANSPORTATIONS AVAILABLE</LI>
+</h4></OL>
+</div>
+
+<footer id="footer">
+<UL>
+<LI><A HREF="DEFAULT.ASP">FAQ</A></LI>
+<LI><A HREF="DEFAULT.ASP">TERMS AND CONDITIONS</A></LI>
+<LI><A HREF="DEFAULT.ASP">COPY RIGHTS</A></LI>
+</UL>
+</footer>
+</body>
+</html>
+
+
+<!--
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>contruction webpage</title>
+</head>
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Syloti+Nagri&display=swap');
+body
+{
+    font-family: 'Source sans pro', sans-serif;    
+    display:grid;
+    grid-template-areas:
+    "header header header header"
+    "nav nav nav nav"
+    "art1 art2 art3 art4 "
+    "footer footer footer footer";
+    grid-template-rows:60px 1fr 1fr 15%;
+    grid-template-columns:1fr 1fr 1fr 1fr;
+    height:100vh;
+    margin:0px;
+    box-sizing: border-box;
+}
+header,nav,div,footer
+{
+    padding:5px;
+    background-color: rgb(7 87 136);
+    color: white;
+    
+}
+#header
+{
+    grid-area:header;
+    text-align:center;
+    background-color: rgb(169 157 149);
+}
+#nav
+{
+    grid-area:nav;
+    background-image: url("https://cdn.pixabay.com/photo/2014/08/11/21/39/wall-416060__340.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    width: 100vw;
+}
+#nav ul{	
+    list-style-type:none;
+}
+#nav ul li{
+    display:inline-block;
+    margin-right:115px; 
+}
+#nav ul li a{
+    text-decoration:none;
+    color: rgb(243, 22, 188);
+}
+#nav ul li a:hover{
+    color: rgb(248, 244, 246);
+    border-bottom: 2px solid rgb(253, 14, 162);
+}
+
+#article
+{
+    grid-area:article;
+}
+h2{
+    margin: 20px;
+    font-size: 30px;
+    font-weight: 500;
+}
+#art1 img {
+    margin: 10px;    
+    height: 250px;
+    width: 280px;
+}
+
+#art1 ol li{
+    text-decoration:numbers;
+}
+#art2 img {
+    margin: 10px;    
+    height: 250px;
+    width: 280px;
+}
+#art2 ol li{
+    text-decoration:numbers;
+}
+#art3 img {
+    margin: 10px;    
+    height: 250px;
+    width: 280px;
+}
+#art3 ol li{
+    text-decoration:numbers;
+}
+#art4 img {
+    margin: 10px;    
+    height: 250px;
+    width: 280px;
+}
+#art4 ol li{
+    text-decoration:numbers;
+}
+
+
+
+
+
+#footer
+{
+    grid-area:footer;
+    background-color:#000000cf;
+}
+#footer ul li{ 
+    float:right;
+    margin-right:250px;	
+    margin-top:20px;
+}
+#footer ul li a
+{
+    text-decoration:none;
+}
+
+</style>
+<body>
+<header id="header">
+<h1>LAMA FOUNDATION PVT.LID.</h1>
+</header>
+<nav id="nav">
+<UL>
+<LI><A HREF="DEFAULT.ASP">HOME</A></LI>
+<LI><A HREF="DEFAULT.ASP">CONTACT</A></LI>
+<LI><A HREF="DEFAULT.ASP">ABOUT</A></LI>
+<LI><A HREF="DEFAULT.ASP">PROFILE</A></LI>
+<LI><A HREF="default.asp">LOGIN</A></LI>
+<LI><A HREF="default.asp">SERVICE</A></LI>
+<LI><A HREF="default.asp">REGISTER</A></LI>
+</UL>
+</nav>
+  
+<div id="art1">
+<img src="https://img.staticmb.com/mbcontent/images/uploads/2021/7/flat-and-apartment_1626887258175.jpg">
+<H2>FLATES FOR SALE</H2>
+<OL><h5>
+<LI>1BHK LUXURIOUS FLATS</LI>
+<LI>FULL TIME WATER SERVICE</LI>
+<LI>SCHOOLS AND COLLEGES IN 5KMS</LI>
+<LI>HOSPITALS FECILITIES IN 3KMS</LI>
+<LI>TRANSPORTATIONS AVAILABLE</LI>
+</h5></OL>
+</div>
+
+<div id="art2">
+<img src="https://img.staticmb.com/mbcontent/images/uploads/2021/7/flat-and-apartment_1626887258175.jpg">
+<H2>FLATES FOR SALE</H2>
+<OL><h5>
+<LI>2BHK LUXURIOUS FLATS</LI>
+<LI>FULL TIME WATER SERVICE</LI>
+<LI>SCHOOLS AND COLLEGES IN 5KMS</LI>
+<LI>HOSPITALS FECILITIES IN 3KMS</LI>
+<LI>TRANSPORTATIONS AVAILABLE</LI>
+</h5></OL>
+</div>
+
+<div id="art3">
+<img src="https://img.staticmb.com/mbcontent/images/uploads/2021/7/flat-and-apartment_1626887258175.jpg">
+<H2>FLATES FOR SALE</H2>
+<OL><h5>
+<LI>3BHKLUXURIOUS FLATS</LI>
+<LI>FULL TIME WATER SERVICE</LI>
+<LI>SCHOOLS AND COLLEGES IN 5KMS</LI>
+<LI>HOSPITALS FECILITIES IN 3KMS</LI>
+<LI>TRANSPORTATIONS AVAILABLE</LI>
+</h5></OL>
+</div>
+
+<div id="art4">
+<img src="https://img.staticmb.com/mbcontent/images/uploads/2021/7/flat-and-apartment_1626887258175.jpg">
+<H2>FLATES FOR SALE</H2>
+<OL><h5>
+<LI>4BHK LUXURIOUS FLATS</LI>
+<LI>FULL TIME WATER SERVICE</LI>
+<LI>SCHOOLS AND COLLEGES IN 5KMS</LI>
+<LI>HOSPITLS FECILITIES IN 3KMS</LI>
+<LI>TRANSPORTATIONS AVAILABLE</LI>
+</h5></OL>
+</div>
+
+
+
+
+<footer id="footer">
+<UL>
+<LI><A HREF="DEFAULT.ASP">FAQ</A></LI>
+<LI><A HREF="DEFAULT.ASP">TERMS AND CONDITIONS</A></LI>
+<LI><A HREF="DEFAULT.ASP">COPY RIGHTS</A></LI>
+</UL>
+</footer>
+</body>
+</html>
+-->

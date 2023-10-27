@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <title>Weather App with time and date</title>
+</head>
+<style>
+    body{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    .container img{
+        height: 100vh;
+        width: 100vw;
+    }
+    .card{
+        width: 90%;
+        max-width: 400px;
+        height: 80vh;
+        background: transparent;
+        border: 3px solid rgb(194, 176, 176);
+        box-shadow: 0 0 80px;
+        position: absolute;
+        color: white;
+        border-radius: 5px;
+        text-align: center;
+        margin: -700px 500px;
+        padding: 40px;
+     }
+    .search{ 
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .search input{
+        border: 0;
+        outline: 0;
+        height: 50px;
+        background-color: rgb(223, 228, 233);
+        color: rgb(13, 11, 29);
+        font-size: 18px;
+        padding: 10px 30px;
+        border-radius: 40px;
+        flex: 1;
+    }
+    .search button{
+        border-radius: 45px;
+        background-color: rgb(231, 236, 239);
+        color: rgb(14, 12, 16);
+        font-size: 20px;
+        padding: 8px;
+        margin-left: 10px;
+        border: 0;
+    }
+    .search button i{
+        padding: 15px;
+    }
+    .weather img{
+        height: 100px;
+        width: 100px;
+    }
+    .weather h1{
+        font-size:50px ;
+        font-weight: 300;
+    }
+    .weather h2{
+        font-size:50px ;
+        font-weight: 300;
+    }
+
+    .detail{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0px 20px;
+        margin-top: 50px;
+    }
+    .col{
+        display: flex;
+        align-items: center;        
+    }
+    .col img{
+        width: 50px;
+        height: 50px;     
+    }
+    .hum,.wind{
+       font-size: 22px;     
+    }
+    
+    
+
+    .txt marquee p {
+        margin-top: 10px;
+        width: 800px;
+        height: 20px;
+    }
+    .digit{
+       font-size: 20px;
+    }
+
+</style>
+<body>
+    
+    <div class="container row col-md-12">
+        <img src="https://www.bing.com/th/id/OGC.313455e9d02afe187eb259d05ba446a4?pid=1.7&rurl=https%3a%2f%2fmedia.giphy.com%2fmedia%2f2cKweddxRo8I8%2f200.gif&ehk=icTffEPwRLqIO3vnQn7fukds9POwCe%2fEqSqAsU9gsdc%3d" alt="">
+    <div class="card">
+        <div class="search">
+            <input type="text" placeholder="Enter city name" spellcheck="false">
+            <button> <i class="fa fa-search"></i></button>
+        </div>
+        <div class="weather">
+            <img src="https://th.bing.com/th/id/R.40d7c64983da6ecc2515d427f66d390a?rik=4xEcT7c8YzOXLQ&riu=http%3a%2f%2fclipartmag.com%2fimages%2fweather-clipart-33.png&ehk=fFHd8A5nzExwshA7H7xgNeu5yBuQakKaJRk5W9Gzsas%3d&risl=&pid=ImgRaw&r=0">
+            <h1 class="tem">25°C</h1>
+            <h2 class="city">America</h2>
+            <div class="digit">
+                <div class="clockdate">
+                    <div id="clock"></div>
+                    <div id="date"></div>
+                </div>
+            </div>
+
+            <div class="detail">
+                <div class="col">
+                <img src="https://cdn4.iconfinder.com/data/icons/disasters-flat-colorful/2048/6723_-_Cold_Wave-512.png" alt="">
+                </div>
+                <p class="hum">50% </p>
+                <p>Humidity</p>
+                <div class="col">
+                    <img src="https://th.bing.com/th/id/R.1e86927dc684f0ca398386ef5ed75f02?rik=4IvJkaBOLerK5g&riu=http%3a%2f%2fclipart-library.com%2fimages_k%2fwind-clipart-transparent%2fwind-clipart-transparent-19.png&ehk=6XLXb6WVeNsePxiqbgkpvYvGB5wfdejxaV8kxSrX%2bzs%3d&risl=&pid=ImgRaw&r=0" alt="">
+                </div>
+                <p class="wind">15 km/h </p>
+                <p>Wind Speed</p>
+            </div>
+            <div class="txt">
+                <marquee>
+                    <p>
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tenetur odit in omnis illo culpa, sed, quam error nesciunt a possimus vero repellat ut enim quae eius harum! Sequi, esse similique!
+                    </p>
+                </marquee>
+            </div>
+        </div>
+       
+    </div>
+   </div> 
+   
+   
+    
+
+<script>
+    const apikey ="57e0faa1157c14bfd1a4435590588f95";
+    const apiUrl ="https://api.openweathermap.org/data/2.5/weather?units=metric&q=";
+    
+    const searchBox=document.querySelector(".search input");
+    const searchBtn=document.querySelector(".search button");
+    
+
+
+    async function checkWeather(city){
+        const response= await fetch(apiUrl+city+`&appid=${apikey}`);
+        var data=await response.json();
+
+        console.log(data); 
+        
+        document.querySelector(".city").innerHTML=data.name;
+        document.querySelector(".tem").innerHTML=Math.round(data.main.temp)+"°C";
+        document.querySelector(".hum").innerHTML=data.main.humidity+"%";
+        document.querySelector(".wind").innerHTML=data.wind.speed+"km/h";
+   
+    }
+    searchBtn.addEventListener("click", ()=>{
+        checkWeather(searchBox.value);
+
+    })
+    
+
+
+
+
+
+    function startTime(){
+    var today = new Date();
+    var hr = today.getHours();
+    var min = today.getMinutes();
+    var sec = today.getSeconds();
+    ap = (hr < 12) ? "<span>AM</span>" : "<span>PM</span>";
+    hr = (hr == 0) ? 12 : hr;
+    hr = (hr > 12) ? hr-12 : hr;
+    hr = checkTime(hr);
+    min = checkTime(min);
+    sec = checkTime(sec);
+    document.getElementById("clock").innerHTML = hr + ":" + min + ":" + sec + " " + ap;
+
+    var months = ['January','February','March','April','May','June','August','Septembere','October','November','December'];
+    var days = ['Sun','Mon','Tue','Wed','Thu','Fri','Sat'];
+    var curWeekDay = days[today.getDay()];
+    var curDay = today.getDate();
+    var curMonth = months[today.getMonth()];
+    var curYear = today.getFullYear();
+    var date = curWeekDay+","+curDay+" "+curMonth+" "+curYear;
+    document.getElementById("date").innerHTML = date;
+    
+    var time = setTimeout(function(){startTime()},500);
+    }
+    function checkTime(i){
+    if (i<10){
+        i = "0" + i;
+    }
+    return i;
+
+    }
+
+    startTime();
+  
+</script>
+<!--
+    https://openweather.co.uk/storage/app/media/uploaded-files/wmd_3.jpg
+<video autoplay loop muted plays-inline class="back-video" src="" type="video"></video>
+
+-->
+</body>
+</html>
